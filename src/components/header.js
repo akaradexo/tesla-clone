@@ -113,11 +113,11 @@ const BurgerNav = styled.div`
 
   }
 `
-const CustomClose=styled(CloseIcon)`
+const CustomClose = styled(CloseIcon)`
   cursor:pointer;
 
 `
-const CloseWrapper =styled.div`
+const CloseWrapper = styled.div`
   display:flex;
   justify-content:flex-end;
 `
