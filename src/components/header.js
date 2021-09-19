@@ -18,12 +18,12 @@ function Header() {
       </a>
       <Menu>
         {cars && cars.map((car, index)=>(
-            <a key={index} href="#">{car}</a>
+            <a key={index} href="https://tesla-clone-qop.netlify.app">{car}</a>
         ))}
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <a href="https://tesla-clone-qop.netlify.app">Shop</a>
+        <a href="https://tesla-clone-qop.netlify.app">Tesla Account</a>
         <CustomMenu onClick={()=>setBurgerStatus(true)}/>
       </RightMenu>
       <BurgerNav show={burgerStatus}>
@@ -31,16 +31,16 @@ function Header() {
           <CustomClose onClick={()=>setBurgerStatus(false)}/>
         </CloseWrapper>
         {cars && cars.map((car, index)=>(
-            <li key={index}><a href="#">{car}</a></li>
+            <li key={index}><a href="https://tesla-clone-qop.netlify.app">{car}</a></li>
         ))}
-        <li><a href="#">Existing Inventory</a></li>
-        <li><a href="#">Used Inventory</a></li>
-        <li><a href="#">Trade-In</a></li>
-        <li><a href="#">Cybertruck</a></li>
-        <li><a href="#">Roadster</a></li>
-        <li><a href="#">Semi</a></li>
-        <li><a href="#">Charging</a></li>
-        <li><a href="#">Power</a></li>
+        <li><a href="https://tesla-clone-qop.netlify.app">Existing Inventory</a></li>
+        <li><a href="https://tesla-clone-qop.netlify.app">Used Inventory</a></li>
+        <li><a href="https://tesla-clone-qop.netlify.app">Trade-In</a></li>
+        <li><a href="https://tesla-clone-qop.netlify.app">Cybertruck</a></li>
+        <li><a href="https://tesla-clone-qop.netlify.app">Roadster</a></li>
+        <li><a href="https://tesla-clone-qop.netlify.app">Semi</a></li>
+        <li><a href="https://tesla-clone-qop.netlify.app">Charging</a></li>
+        <li><a href="https://tesla-clone-qop.netlify.app">Power</a></li>
       </BurgerNav>
     </Container>
   )
