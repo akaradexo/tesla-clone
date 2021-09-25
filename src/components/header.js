@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
+import Menu from '@material-ui/icons/Menu';
+import Close from '@material-ui/icons/Close';
 import { selectCars } from '../features/car/carSlice'
 import { useSelector } from 'react-redux';
 
@@ -16,11 +16,11 @@ function Header() {
       <a>
         <img src="/images/logo.svg" alt="logo"/>
       </a>
-      <Menu>
+      <MenuContainer>
         {cars && cars.map((car, index)=>(
             <a key={index} href="https://tesla-clone-qop.netlify.app">{car}</a>
         ))}
-      </Menu>
+      </MenuContainer>
       <RightMenu>
         <a href="https://tesla-clone-qop.netlify.app">Shop</a>
         <a href="https://tesla-clone-qop.netlify.app">Tesla Account</a>
@@ -61,7 +61,7 @@ const Container = styled.div`
   z-index:1;
 
 `
-const Menu = styled.div`
+const MenuContainer = styled.div`
   display:flex;
   align-item:center;
   justify-content:center;
@@ -86,7 +86,7 @@ a{
   margin-right:10px;
 }
 ` 
-const CustomMenu = styled(MenuIcon)`
+const CustomMenu = styled(Menu)`
   cursor:pointer;
 `
 const BurgerNav = styled.div`
@@ -113,7 +113,7 @@ const BurgerNav = styled.div`
 
   }
 `
-const CustomClose = styled(CloseIcon)`
+const CustomClose = styled(Close)`
   cursor:pointer;
 
 `
