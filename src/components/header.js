@@ -24,11 +24,11 @@ function Header() {
       <RightMenu>
         <a href="https://tesla-clone-qop.netlify.app">Shop</a>
         <a href="https://tesla-clone-qop.netlify.app">Tesla Account</a>
-        <CustomMenu onClick={()=>setBurgerStatus(true)}/>
+        <Menu onClick={()=>setBurgerStatus(true)} style={{cursor:"pointer"}}/>
       </RightMenu>
       <BurgerNav show={burgerStatus}>
         <CloseWrapper>
-          <CustomClose onClick={()=>setBurgerStatus(false)}/>
+          <Close onClick={()=>setBurgerStatus(false)} style={{cursor:"pointer"}}/>
         </CloseWrapper>
         {cars && cars.map((car, index)=>(
             <li key={index}><a href="https://tesla-clone-qop.netlify.app">{car}</a></li>
@@ -86,9 +86,7 @@ a{
   margin-right:10px;
 }
 ` 
-const CustomMenu = styled(Menu)`
-  cursor:pointer;
-`
+
 const BurgerNav = styled.div`
   position:fixed;
   top:0;
@@ -113,10 +111,7 @@ const BurgerNav = styled.div`
 
   }
 `
-const CustomClose = styled(Close)`
-  cursor:pointer;
 
-`
 const CloseWrapper = styled.div`
   display:flex;
   justify-content:flex-end;
