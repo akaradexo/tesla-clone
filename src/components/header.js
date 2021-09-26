@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import styled from 'styled-components';
 import Menu from '@material-ui/icons/Menu';
 import Close from '@material-ui/icons/Close';
-import { selectCars } from '../features/car/carSlice'
+import selectCars from '../features/car/carSlice'
 import { useSelector } from 'react-redux';
 
 
