@@ -46,7 +46,7 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;
 
 const Container = styled.div`
   min-height : 60px;
